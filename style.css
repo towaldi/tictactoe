@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Reset all 
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Layout + style
+   ========================================================================== */
+
+/* Table
+   ========================================================================== */
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    width: 360px;
+}
+
+td {
+    /* Positioning */
+    position: relative;
+    /* Display & box model */
+    width: 120px;
+    height: 120px;
+    /* Other */
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+/* All td's in the 1. row -> no border top */
+tr:first-child td {
+    border-top: 0;
+}
+/* All td's in the 3. column -> no border right */
+tr td:last-child {
+    border-right: 0;
+}
+/* All td's in the 3. row -> no border bottom */
+tr:last-child td {
+    border-bottom: 0;
+}
+/* All td's in the 1. column -> no border left */
+tr td:first-child {
+    border-left: 0;
+}
+
+
+/* Squares (input
+   ========================================================================== */
+.square {
+    /* Display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players-occupation {
+    /* Positioning */
+    position: absolute;
+}
+
+
+/* ==========================================================================
+   Effects
+   ========================================================================== */
+.d-none {
+    display: none;
+}
+
+td {
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
