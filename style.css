@@ -7,10 +7,35 @@
     padding: 0;
 }
 
+body {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 
 /* ==========================================================================
    Layout + style
    ========================================================================== */
+
+/* Players panel
+   ========================================================================== */
+.players-container, .player {
+    /* Display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.player {
+    /* Display & box model */
+    gap: 16px;
+}
+
 
 /* Table
    ========================================================================== */
@@ -50,7 +75,7 @@ tr td:first-child {
 }
 
 
-/* Squares (input
+/* Squares 
    ========================================================================== */
 .square {
     /* Display & box model */
@@ -78,4 +103,25 @@ td {
 
 td:hover {
     background-color: rgba(0, 0, 0, 0.06);
+}
+
+
+/* ==========================================================================
+   Font
+   ========================================================================== */
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* Implementation
+   ========================================================================== */
+/* Medium */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Medium.woff) format('woff');
+    font-style: normal;
+    font-weight: 500;
 }
