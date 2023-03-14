@@ -8,15 +8,21 @@ let currentSign = 'circle';
 
 // Update squares
 function fillSquares(id) {      // Id -> for each square
-    if (currentSign == 'circle') {      // Checks current sign (player switching) -> if currentSign 'circle' change to 'cross'
-        currentSign = 'cross';
-    } else {
-        currentSign = 'circle'      // If state 'false' -> 'circle'
+    if (!git squares[id]) {      // Only if square is NOT filled following code gets exectuted (to aviod d)
+        if (currentSign == 'circle') {      // Checks current sign (player switching) -> if currentSign 'circle' change to 'cross'
+            currentSign = 'cross';
+            document.getElementById('player-2').classList.remove('inactive');   // Remove class inactive for player -> visual feedback which player is on turn
+            document.getElementById('player-1').classList.add('inactive');   
+        } else {
+            currentSign = 'circle'      // If state 'false' -> 'circle'
+            document.getElementById('player-2').classList.add('inactive');   // Remove class inactive for player -> visual feedback which player is on turn
+            document.getElementById('player-1').classList.remove('inactive'); 
+        }
+        squares[id] = currentSign;     // Square is filled with 'circle' or 'cross'
+        console.log(squares);
+        draw();     // Function is called after each click
+        checkWhoWins();     // Function is called after each click
     }
-    squares[id] = currentSign;     // Square is filled with 'circle' or 'cross'
-    console.log(squares);
-    draw();     // Function is called after each click
-    checkWhoWins();     // Function is called after each click
 }
 
 
@@ -24,11 +30,11 @@ function fillSquares(id) {      // Id -> for each square
 function draw() {
     for (let i = 0; i < squares.length; i++) {      // Itteration through array
         if (squares[i] == 'circle') {       // If square at position i = 'circle' remove d-none
-            document.getElementById('circle-' + i).classList.remove('d-none')
+            document.getElementById('circle-' + i).classList.remove('d-none');
         }
 
         if (squares[i] == 'cross') {        // If square at position i = 'cross' remove d-none
-            document.getElementById('cross-' + i).classList.remove('d-none')
+            document.getElementById('cross-' + i).classList.remove('d-none');
         }  
     }
 }

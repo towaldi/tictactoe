@@ -23,17 +23,26 @@ body {
 
 /* Players panel
    ========================================================================== */
-.players-container, .player {
+.players-container {
     /* Display & box model */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 16px;
     gap: 32px;
 }
 
 .player {
     /* Display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
+}
+
+.inactive {
+    /* Other */
+    opacity: 0.5;
 }
 
 
