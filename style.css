@@ -45,6 +45,24 @@ body {
     opacity: 0.5;
 }
 
+/* Lines
+   ========================================================================== */
+.horizontal-line {
+    /* Positioning */
+    position: absolute;
+    /* Display & box model */
+    height: 4px;
+    width: 300px;
+    /* Other */
+    background-color: rgba(0, 0, 0, 1);
+    
+}
+
+.transform-vertical {
+    /* Other */
+    transform: rotate(90deg);
+}
+
 
 /* Table
    ========================================================================== */

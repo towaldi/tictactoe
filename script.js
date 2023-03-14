@@ -8,7 +8,7 @@ let currentSign = 'circle';
 
 // Update squares
 function fillSquares(id) {      // Id -> for each square
-    if (!git squares[id]) {      // Only if square is NOT filled following code gets exectuted (to aviod d)
+    if (!squares[id]) {      // Only if square is NOT filled following code gets exectuted (to aviod d)
         if (currentSign == 'circle') {      // Checks current sign (player switching) -> if currentSign 'circle' change to 'cross'
             currentSign = 'cross';
             document.getElementById('player-2').classList.remove('inactive');   // Remove class inactive for player -> visual feedback which player is on turn
