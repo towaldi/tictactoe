@@ -111,6 +111,6 @@ function restart() {
 
     for (let i = 0; i < 9; i++) {   // Hide players sign
         document.getElementById('circle-' + i).classList.add('d-none');
-        document.getElementById('cross -' + i).classList.add('d-none');
+        document.getElementById('cross-' + i).classList.add('d-none');
     }
 }
