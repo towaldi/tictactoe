@@ -119,7 +119,12 @@ body {
 
 /* Table
    ========================================================================== */
+.table-lines {
+    position: relative;
+}
+
 table {
+    position: relative;
     border-collapse: collapse;
 }
 

@@ -38,107 +38,109 @@
         </div>
     </div>
 
-    <!-- Lines horizontal -->
-    <div id="line-1" class="horizontal-line" style="top: 394px;"></div>
-    <div id="line-2" class="horizontal-line" style="top: 514px;"></div>
-    <div id="line-3" class="horizontal-line" style="top: 634px;"></div>
-    <!-- Lines vertical -->
-    <div id="line-4" class="horizontal-line transform-vertical" style="top: 514px; left: 120px;"></div>
-    <div id="line-5" class="horizontal-line transform-vertical" style="top: 514px;"></div>
-    <div id="line-6" class="horizontal-line transform-vertical" style="top: 514px; left: 360px;"></div>
-    <!-- Lines diagonal -->
-    <div id="line-7" class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(45deg) scaleX(0.0);"></div>
-    <div id="line-8" class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(-45deg) scaleX(0.0);"></div>
+    <div class="table-lines">
+        <!-- Lines horizontal -->
+        <div id="line-1" class="horizontal-line" style="top: 394px;"></div>
+        <div id="line-2" class="horizontal-line" style="top: 514px;"></div>
+        <div id="line-3" class="horizontal-line" style="top: 634px;"></div>
+        <!-- Lines vertical -->
+        <div id="line-4" class="horizontal-line transform-vertical" style="top: 514px; left: 120px;"></div>
+        <div id="line-5" class="horizontal-line transform-vertical" style="top: 514px;"></div>
+        <div id="line-6" class="horizontal-line transform-vertical" style="top: 514px; left: 360px;"></div>
+        <!-- Lines diagonal -->
+        <div id="line-7" class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(45deg) scaleX(0.0);"></div>
+        <div id="line-8" class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(-45deg) scaleX(0.0);"></div>
 
+        <table>
+            <tr>
+                <!-- 1 square -->
+                <td onclick="fillSquares(0)">
+                    <div class="square">
+                        <img id="circle-0" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-0" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                <!-- 1 square -->
+                </td>
+                <td onclick="fillSquares(1)">
+                    <div class="square">
+                        <img id="circle-1" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-1" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+                <!-- 1 square -->
+                <td onclick="fillSquares(2)">
+                    <div class="square">
+                        <img id="circle-2" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-2" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <!-- 1 square -->
+                <td onclick="fillSquares(3)">
+                    <div class="square">
+                        <img id="circle-3" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-3" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+                <!-- 1 square -->
+                <td onclick="fillSquares(4)">
+                    <div class="square">
+                        <img id="circle-4" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-4" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+                <!-- 1 square -->
+                <td onclick="fillSquares(5)">
+                    <div class="square">
+                        <img id="circle-5" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-5" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <!-- 1 square -->
+                <td onclick="fillSquares(6)">
+                    <div class="square">
+                        <img id="circle-6" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-6" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+                <!-- 1 square -->
+                <td onclick="fillSquares(7)">
+                    <div class="square">
+                        <img id="circle-7" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-7" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+                <!-- 1 square -->
+                <td onclick="fillSquares(8)">
+                    <div class="square">
+                        <img id="circle-8" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
+                    </div>
+                    <div class="square">
+                        <img id="cross-8" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
+                    </div>
+                </td>
+            </tr>
+        </table>
+</div>
 
-    <table>
-        <tr>
-            <!-- 1 square -->
-            <td onclick="fillSquares(0)">
-                <div class="square">
-                    <img id="circle-0" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-0" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            <!-- 1 square -->
-            </td>
-            <td onclick="fillSquares(1)">
-                <div class="square">
-                    <img id="circle-1" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-1" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-            <!-- 1 square -->
-            <td onclick="fillSquares(2)">
-                <div class="square">
-                    <img id="circle-2" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-2" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <!-- 1 square -->
-            <td onclick="fillSquares(3)">
-                <div class="square">
-                    <img id="circle-3" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-3" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-            <!-- 1 square -->
-            <td onclick="fillSquares(4)">
-                <div class="square">
-                    <img id="circle-4" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-4" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-            <!-- 1 square -->
-            <td onclick="fillSquares(5)">
-                <div class="square">
-                    <img id="circle-5" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-5" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <!-- 1 square -->
-            <td onclick="fillSquares(6)">
-                <div class="square">
-                    <img id="circle-6" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-6" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-            <!-- 1 square -->
-            <td onclick="fillSquares(7)">
-                <div class="square">
-                    <img id="circle-7" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-7" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-            <!-- 1 square -->
-            <td onclick="fillSquares(8)">
-                <div class="square">
-                    <img id="circle-8" class="players-occupation d-none" src="./img/circle_48px.svg" alt="Circle">
-                </div>
-                <div class="square">
-                    <img id="cross-8" class="players-occupation d-none" src="./img/cross_48px.svg" alt="Cross">
-                </div>
-            </td>
-        </tr>
-    </table>
 </body>
 </html>
