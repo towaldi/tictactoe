@@ -14,6 +14,19 @@
 </head>
 
 <body>
+    <!-- Dialog: Game over-->
+    <div id="dialog-game-over" class="dialog-game-over d-none">
+        <div class="game-over-card">
+            <div class="card-text">
+                <h1>GAME OVER</h1>
+                <p>Player X has won!</p>
+            </div>
+            <div class="card-interaction">
+                <button onclick="restart()" class="btn">RESTART</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Player -->
     <div class="players-container">
         <div id="player-1" class="player">
@@ -27,16 +40,16 @@
     </div>
 
     <!-- Lines horizontal -->
-    <div class="horizontal-line" style="top: 394px;"></div>
-    <div class="horizontal-line" style="top: 514px;"></div>
-    <div class="horizontal-line" style="top: 634px;"></div>
+    <div id="line-1" class="horizontal-line" style="top: 394px;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 514px;"></div>
+    <div id="line-3" class="horizontal-line" style="top: 634px;"></div>
     <!-- Lines vertical -->
-    <div class="horizontal-line transform-vertical" style="top: 514px; left: 120px;"></div>
-    <div class="horizontal-line transform-vertical" style="top: 514px;"></div>
-    <div class="horizontal-line transform-vertical" style="top: 514px; left: 360px;"></div>
+    <div id="line-4" class="horizontal-line transform-vertical" style="top: 514px; left: 120px;"></div>
+    <div id="line-5" class="horizontal-line transform-vertical" style="top: 514px;"></div>
+    <div id="line-6" class="horizontal-line transform-vertical" style="top: 514px; left: 360px;"></div>
     <!-- Lines diagonal -->
-    <div class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(45deg);"></div>
-    <div class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(-45deg);"></div>
+    <div id="line-7" class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(45deg) scaleX(0.0);"></div>
+    <div id="line-8" class="horizontal-line" style="top: 514px; width: 340px; transform: rotate(-45deg) scaleX(0.0);"></div>
 
 
     <table>

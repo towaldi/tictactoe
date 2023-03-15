@@ -23,6 +23,57 @@ body {
 
 /* Players panel
    ========================================================================== */
+.dialog-game-over {
+    /* Positioning */
+    position: absolute;
+    z-index: 2;
+    /* Display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* Other */
+    animation: zoomIn 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transition: scale(0);
+    }
+    to {
+        opacity: 1;
+        transition: scale(1);
+    }
+}
+
+.game-over-card {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 64px;
+    /* Other */
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+
+}
+
+.card-text {
+    /* Display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Players panel
+   ========================================================================== */
 .players-container {
     /* Display & box model */
     display: flex;
@@ -50,17 +101,19 @@ body {
 .horizontal-line {
     /* Positioning */
     position: absolute;
+    z-index: 1;
     /* Display & box model */
     height: 4px;
     width: 300px;
     /* Other */
     background-color: rgba(0, 0, 0, 1);
-    
+    transform: scaleX(0.0);
+    transition: transform 0.2s ease-in-out;
 }
 
 .transform-vertical {
     /* Other */
-    transform: rotate(90deg);
+    transform: rotate(90deg) scaleX(0.0);
 }
 
 
@@ -132,15 +185,39 @@ td:hover {
     background-color: rgba(0, 0, 0, 0.06);
 }
 
+.btn {
+    /* Display & box model */
+    padding: 8px 16px;
+    /* Other */
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+    /* Other */
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
 
 /* ==========================================================================
    Font
    ========================================================================== */
-h1 {
+h1, p {
     font-family: 'Roboto';
     font-style: normal;
+}
+
+h1 {
     font-weight: 500;
     font-size: 24px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* Implementation
@@ -151,4 +228,11 @@ h1 {
     src: url(./fonts/Roboto-Medium.woff) format('woff');
     font-style: normal;
     font-weight: 500;
+}
+/* Thin */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
 }
