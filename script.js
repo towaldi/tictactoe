@@ -14,12 +14,12 @@ function fillSquares(id) {      // Id -> for each square
     if (!squares[id] && !gameOver) {      // Only if square is NOT filled following code gets exectuted (to aviod d) AND if not game over
         if (currentSign == 'circle') {      // Checks current sign (player switching) -> if currentSign 'circle' change to 'cross'
             currentSign = 'cross';
-            document.getElementById('player-2').classList.remove('inactive');   // Remove class inactive for player -> visual feedback which player is on turn
-            document.getElementById('player-1').classList.add('inactive');   
+            document.getElementById('player-1').classList.remove('inactive');   // Remove class inactive for player -> visual feedback which player is on turn
+            document.getElementById('player-2').classList.add('inactive');   
         } else {
             currentSign = 'circle'      // If state 'false' -> 'circle'
-            document.getElementById('player-2').classList.add('inactive');   // Remove class inactive for player -> visual feedback which player is on turn
-            document.getElementById('player-1').classList.remove('inactive'); 
+            document.getElementById('player-1').classList.add('inactive');   // Remove class inactive for player -> visual feedback which player is on turn
+            document.getElementById('player-2').classList.remove('inactive'); 
         }
         squares[id] = currentSign;     // Square is filled with 'circle' or 'cross'
         console.log(squares);
@@ -102,14 +102,14 @@ function checkWhoWins() {
 // Restart game
 function restart() {
     gameOver = false; // Reset cancel condition
-    squares = [];   // Reset array
+    squares = [];     // Reset array
     document.getElementById('dialog-game-over').classList.add('d-none');     // Hide game over dialog
 
-    for (let i = 0; i < 8; i++) {      // Hide win line
+    for (let i = 1; i < 8; i++) {      // Hide win line
         document.getElementById('line-' + i).classList.add('d-none');
     }
 
-    for (let i = 0; i < 9; i++) {   // Hide players sign
+    for (let i = 0; i < 9; i++) {   // Hide players signs
         document.getElementById('circle-' + i).classList.add('d-none');
         document.getElementById('cross-' + i).classList.add('d-none');
     }

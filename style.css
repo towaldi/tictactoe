@@ -103,10 +103,10 @@ body {
     position: absolute;
     z-index: 1;
     /* Display & box model */
-    height: 4px;
+    height: 6px;
     width: 300px;
     /* Other */
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 0, 0, 1);
     transform: scaleX(0.0);
     transition: transform 0.2s ease-in-out;
 }
@@ -139,7 +139,7 @@ td {
     width: 120px;
     height: 120px;
     /* Other */
-    border: 1px solid rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 /* All td's in the 1. row -> no border top */
