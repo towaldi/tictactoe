@@ -79,7 +79,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     gap: 32px;
 }
 
@@ -106,7 +106,7 @@ body {
     height: 6px;
     width: 300px;
     /* Other */
-    background-color: rgba(255, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
     transform: scaleX(0.0);
     transition: transform 0.2s ease-in-out;
 }
@@ -172,6 +172,16 @@ tr td:first-child {
 .players-occupation {
     /* Positioning */
     position: absolute;
+}
+
+
+/* Footer
+   ========================================================================== */
+.creator {
+    /* Display & box model */
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
 }
 
 

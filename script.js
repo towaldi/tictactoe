@@ -105,8 +105,8 @@ function restart() {
     squares = [];     // Reset array
     document.getElementById('dialog-game-over').classList.add('d-none');     // Hide game over dialog
 
-    for (let i = 1; i < 8; i++) {      // Hide win line
-        document.getElementById('line-' + i).classList.add('d-none');
+    for (let i = 1; i < 9; i++) {      // Hide win line
+        document.getElementById('line-' + i).style.transform = 'scaleX(0)';
     }
 
     for (let i = 0; i < 9; i++) {   // Hide players signs
